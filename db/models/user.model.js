@@ -23,10 +23,6 @@ const UserSchema = {
     type: DataTypes.STRING,
     defaultValue: 'onlooker',
   },
-  name: {
-    allowNull: true,
-    type: DataTypes.STRING,
-  },
   createdAt: {
     allowNull: false,
     type: DataTypes.DATE,
