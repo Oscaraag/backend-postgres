@@ -26,7 +26,6 @@ module.exports = {
         type: DataTypes.STRING,
         defaultValue: 'onlooker',
       },
-
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,
@@ -37,6 +36,6 @@ module.exports = {
   },
 
   async down(queryInterface) {
-    await queryInterface.drop(USER_TABLE);
+    await queryInterface.dropTable(USER_TABLE);
   },
 };
