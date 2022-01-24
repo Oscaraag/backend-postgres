@@ -5,4 +5,7 @@ module.exports = {
   async up(queryInterface) {
     await queryInterface.changeColumn(USER_TABLE, 'role', UserSchema.role);
   },
+  async down(queryInterface) {
+    //this is not possible
+  },
 };
