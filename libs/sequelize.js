@@ -10,8 +10,10 @@ const DB_URL = dbUrl;
 const options = {
   dialect: 'postgres',
   logging: isProd ? false : true,
-  ssl: isProd && {
-    rejectUnauthorized: false,
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: isProd ? false : true,
+    },
   },
 };
 
