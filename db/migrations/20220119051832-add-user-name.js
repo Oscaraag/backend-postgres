@@ -6,10 +6,8 @@ const { DataTypes, Sequelize } = require('sequelize');
 module.exports = {
   async up(queryInterface) {
     await queryInterface.addColumn(USER_TABLE, 'name', {
-      name: {
-        allowNull: true,
-        type: DataTypes.STRING,
-      },
+      allowNull: true,
+      type: DataTypes.STRING,
     });
   },
 
